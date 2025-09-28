@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sheet_Hussam</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://apis.google.com/js/api.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Hussam_Shdefat</h1>
+        
+        <!-- Status Indicator -->
+        <div id="status" style="text-align: center; margin-bottom: 20px; padding: 10px; border-radius: 4px;">
+            جاري التحميل...
+        </div>
+        
+        <!-- Inventory Table -->
+        <h2>الجدول الرئيسي (المخزون)</h2>
+        <table id="inventoryTable">
+            <thead>
+                <tr>
+                    <th>الفئة</th>
+                    <th>الكمية الكلية</th>
+                    <th>المتبقي</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Data will be populated by JavaScript -->
+            </tbody>
+        </table>
+        
+        <!-- Category Selection -->
+        <h2>اختر الفئات</h2>
+        <div class="category-selection">
+            <div class="category-group">
+                <h3>العمر</h3>
+                <div class="category-buttons" id="age-categories">
+                    <!-- Age category buttons will be populated by JavaScript -->
+                </div>
+            </div>
+            
+            <div class="category-group">
+                <h3>الدخل</h3>
+                <div class="category-buttons" id="income-categories">
+                    <!-- Income category buttons will be populated by JavaScript -->
+                </div>
+            </div>
+            
+            <div class="category-group">
+                <h3>نوع الحليب</h3>
+                <div class="category-buttons" id="milk-categories">
+                    <!-- Milk category buttons will be populated by JavaScript -->
+                </div>
+            </div>
+        </div>
+        
+        <!-- Selected Categories -->
+        <h2>الفئات المحددة</h2>
+        <div class="form-container">
+            <div id="selected-categories" class="selected-categories">
+                <p>لم يتم اختيار أي فئات بعد</p>
+            </div>
+            
+            <div class="form-group">
+                <label for="notes">الملاحظات:</label>
+                <textarea id="notes" rows="3"></textarea>
+            </div>
+            
+            <button id="recordBtn" onclick="recordConsumption()">تسجيل الاستهلاك</button>
+        </div>
+        
+        <!-- Transaction History -->
+        <h2>سجل الاستهلاك</h2>
+        <table id="transactionTable">
+            <thead>
+                <tr>
+                    <th>العمر</th>
+                    <th>الدخل</th>
+                    <th>نوع الحليب</th>
+                    <th>الملاحظات</th>
+                    <th>الوقت</th>
+                    <th>إجراءات</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Data will be populated by JavaScript -->
+            </tbody>
+        </table>
+        
+        <!-- Refresh Button -->
+        <div style="text-align: center; margin-top: 20px;">
+            <button onclick="loadData()" class="reset-btn">تحديث البيانات</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+{
+  "inventory": [
+    {
+      "category": "العمر 20-29",
+      "total": 20,
+      "remaining": 19
+    },
+    {
+      "category": "العمر 30-40",
+      "total": 30,
+      "remaining": 30
+    },
+    {
+      "category": "الدخل 401-500 (C2)",
+      "total": 60,
+      "remaining": 59
+    },
+    {
+      "category": "الدخل 501-600 (C1)",
+      "total": 41,
+      "remaining": 41
+    },
+    {
+      "category": "الدخل 601+ (A&B)",
+      "total": 48,
+      "remaining": 48
+    },
+    {
+      "category": "نيدو",
+      "total": 90,
+      "remaining": 89
+    },
+    {
+      "category": "حليبنا",
+      "total": 29,
+      "remaining": 29
+    },
+    {
+      "category": "إنجوي",
+      "total": 29,
+      "remaining": 29
+    }
+  ],
+  "transactions": [
+    {
+      "category": "العمر 20-29",
+      "notes": "osama",
+      "timestamp": "2025-09-28T22:45:58.681544"
+    },
+    {
+      "category": "الدخل 401-500 (C2)",
+      "notes": "osama",
+      "timestamp": "2025-09-28T22:45:58.681544"
+    },
+    {
+      "category": "نيدو",
+      "notes": "osama",
+      "timestamp": "2025-09-28T22:45:58.681544"
+    }
+  ],
+  "lastUpdated": "2025-09-28T22:45:59.028280"
+}
